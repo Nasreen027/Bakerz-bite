@@ -12,5 +12,11 @@ function makeProductColumn(_product = {}){
 }
 
 function makeProductGrid(_title, _products=[]){
-    let gridHtml = ``
+    let gridHtml = `
+      <div class="container mt-5">
+      <h2>${_title}</h2>
+      </div>
+      <div class="row">
+      </div>`
+      return gridHtml
 }

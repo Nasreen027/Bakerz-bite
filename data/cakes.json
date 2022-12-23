@@ -1,0 +1,8 @@
+[
+    {"name":"Bounty Cake", "price":"1700", "image":"cakes1.png"},
+    {"name":"Toffee Three Milk Cake", "price":"1600", "image":"cakes2.jpg"},
+    {"name":"Rich Chocolate Cake", "price":"1700", "image":"cakes3.jpg"},
+    {"name":"Black Forest Cake", "price":"1600", "image":"cakes4.webp"},
+    {"name":"Malt Cake", "price":"1500", "image":"cakes5.jpg"},
+    {"name":"Nutella Cake", "price":"1900", "image":"cakes6.png"}
+]

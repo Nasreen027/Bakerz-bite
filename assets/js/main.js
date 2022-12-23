@@ -11,3 +11,13 @@ const bunsAndRuskContainer = $("#buns-and-rusk-container")
 const dessertsAndPastryContainer = $("#desserts-and-pastry-container")
 const tartsAndCookiesContainer = $("#tarts-and-cookies-container")
 const puffsAndHiTeaContainer = $("#puffs-and-hi-tea-container")
+
+
+// /////////////////
+//////Cakes////////
+//////////////////
+
+$.getJSON("./data/cakes.json", function(data){
+    cakesContainer.html(makeProductGrid("Cakes",data))
+})
+

@@ -1,0 +1,10 @@
+[
+    {"name":"Cake Rusk", "price":"400", "image":"bis1.jpg"},
+    {"name":"Chocolate Icing Biscuit", "price":"1600", "image":"bis2.webp"},
+    {"name":"Chocolate Chip Biscuit", "price":"1700", "image":"bis3.jpg"},
+    {"name":"Zeera Biscuit", "price":"1600", "image":"bis4.jpg"},
+    {"name":"Coconut Biscuit", "price":"1500", "image":"bis5.jpg"},
+    {"name":"Egg Biscuits", "price":"1900", "image":"bis6.jpg"},
+    {"name":"Cheesy Bites", "price":"1400", "image":"bis7.jpeg"},
+    {"name":"Chocolate Marble Biscuit", "price":"350", "image":"bis8.jpg"}
+]

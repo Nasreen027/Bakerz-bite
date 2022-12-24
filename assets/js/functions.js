@@ -14,16 +14,17 @@ function makeProductColumn(_product = {}){
 function makeProductGrid(_title, _products=[]){
     let gridHtml = `
       <div class="container mt-5">
-      <h2>${_title}</h2>
-      </div>
-      <div class="row">
-      </div>`
+      <h2 class="text-center">${_title}</h2>
+      <div class="row">`
 
       const _columns = _products.map((item, index)=>{
         return makeProductColumn(item)
       })
 
       gridHtml +=  _columns.join('')
+
+      gridHtml += ` </div>
+      </div>` 
 
       return gridHtml
 

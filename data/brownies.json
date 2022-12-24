@@ -1,0 +1,7 @@
+[
+    {"name":"Butterscotch Blondies", "price":"160", "image":"brownie1.jpg"},
+    {"name":"Caramel Nut Brownie", "price":"1600", "image":"brownie2.jpg"},
+    {"name":"Double Fudge Brownie", "price":"1700", "image":"brownie3.jpg"},
+    {"name":"Nutella Brownies", "price":"1600", "image":"brownie4.jpg"},
+    {"name":"Triple Chocolate Brownie", "price":"1500", "image":"brownie5.jpg"}
+]

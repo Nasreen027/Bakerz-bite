@@ -1,0 +1,7 @@
+[
+    {"name":"Brioche Burger Buns ( 4 Pcs )", "price":"160", "image":"bun1.jpg"},
+    {"name":"Brown Buns ( 4 Pcs )", "price":"120", "image":"bun2.webp"},
+    {"name":"Brown Rusk", "price":"110", "image":"bun3.webp"},
+    {"name":"Garlic Rusk", "price":"160", "image":"bun4.webp"},
+    {"name":"White Rusk", "price":"110", "image":"bun5.webp"}
+]

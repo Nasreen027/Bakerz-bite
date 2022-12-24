@@ -5,7 +5,8 @@ function makeProductColumn(_product = {}){
 <a href=""><img src="${defaultImageUrl}${_product.image}" class="card-img-top w-100" style="height:20rem" alt="..."></a>
 </div>
 <div class="card-body container-fluid">
-<h5>${_product.name}</h5>
+<h5 class="card-title">${_product.name}</h5>
+<p class="card-text">${_product.price}</p>
 </div>
 </div>
 </div>`

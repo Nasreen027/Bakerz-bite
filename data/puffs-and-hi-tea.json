@@ -1,0 +1,8 @@
+[
+    {"name":"Bakar Khani", "price":"480", "image":"puf1.jpg"},
+    {"name":"Fruit Cake", "price":"260", "image":"puf2.webp"},
+    {"name":"Marble Cake", "price":"350", "image":"puf3.jpg"},
+    {"name":"Honey Walnut Cake", "price":"450", "image":"puf4.jpg"},
+    {"name":"Plain Cakes", "price":"150", "image":"puf5.jpg"},
+    {"name":"Plain Alaska", "price":"250", "image":"puf6.webp"}
+]

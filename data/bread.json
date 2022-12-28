@@ -1,10 +1,10 @@
 [
-    {"name":"All-Butter Croissant", "price":"170", "image":"bread1.jpg"},
-    {"name":"Chocolate Croissant", "price":"170", "image":"bread2.jpg"},
-    {"name":"Bread Sticks (White)", "price":"170", "image":"bread3.webp"},
-    {"name":"Multigrain Bread", "price":"1600", "image":"bread4.jpg"},
-    {"name":"Brown Bread", "price":"150", "image":"bread5.jpg"},
-    {"name":"White Bread", "price":"190", "image":"bread6.jpg"},
-    {"name":"Garlic Bread", "price":"240", "image":"bread7.jpg"},
-    {"name":"Pita Bread", "price":"130", "image":"bread8.jpg"}
+    {"name":"All-Butter Croissant", "price":"170", "image":"bread1.jpg", "category":"bread"},
+    {"name":"Chocolate Croissant", "price":"170", "image":"bread2.jpg", "category":"bread"},
+    {"name":"Bread Sticks (White)", "price":"170", "image":"bread3.webp", "category":"bread"},
+    {"name":"Multigrain Bread", "price":"1600", "image":"bread4.jpg", "category":"bread"},
+    {"name":"Brown Bread", "price":"150", "image":"bread5.jpg", "category":"bread"},
+    {"name":"White Bread", "price":"190", "image":"bread6.jpg", "category":"bread"},
+    {"name":"Garlic Bread", "price":"240", "image":"bread7.jpg", "category":"bread"},
+    {"name":"Pita Bread", "price":"130", "image":"bread8.jpg", "category":"bread"}
 ]

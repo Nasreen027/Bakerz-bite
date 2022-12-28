@@ -1,7 +1,7 @@
 [
-    {"name":"Chocolate Fudge Cups", "price":"170", "image":"dess1.webp"},
-    {"name":"Chocolate Fudge Cups", "price":"160", "image":"dess2.jpg"},
-    {"name":"Chocolate Glazed Donuts", "price":"140", "image":"dess3.jpg"},
-    {"name":"Cookies And Cream Donut", "price":"160", "image":"dess4.jpg"},
-    {"name":"Cookies And Cream Donut", "price":"150", "image":"dess5.jpg"}
+    {"name":"Chocolate Fudge Cups", "price":"170", "image":"dess1.webp", "category":"desserts-and-pastry"},
+    {"name":"Chocolate Fudge Cups", "price":"160", "image":"dess2.jpg", "category":"desserts-and-pastry"},
+    {"name":"Chocolate Glazed Donuts", "price":"140", "image":"dess3.jpg", "category":"desserts-and-pastry"},
+    {"name":"Cookies And Cream Donut", "price":"160", "image":"dess4.jpg", "category":"desserts-and-pastry"},
+    {"name":"Cookies And Cream Donut", "price":"150", "image":"dess5.jpg", "category":"desserts-and-pastry"}
 ]

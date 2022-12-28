@@ -1,8 +1,8 @@
 [
-    {"name":"Three Milk Cupcake", "price":"210", "image":"cupcake1.jpg"},
-    {"name":"Double Chocolate Cupcakes", "price":"1600", "image":"cupcake2.webp"},
-    {"name":"Red Velvet Cupcakes", "price":"1700", "image":"cupcake3.jpg"},
-    {"name":"Carrot Cupcakes", "price":"1600", "image":"cupcake4.webp"},
-    {"name":"Mini Vanilla Cupcake", "price":"1500", "image":"cupcake5.jpg"},
-    {"name":"Mini Double Chocolate Cupcake", "price":"1900", "image":"cupcake6.webp"}
+    {"name":"Three Milk Cupcake", "price":"210", "image":"cupcake1.jpg", "category":"cup-cakes"},
+    {"name":"Double Chocolate Cupcakes", "price":"1600", "image":"cupcake2.webp", "category":"cup-cakes"},
+    {"name":"Red Velvet Cupcakes", "price":"1700", "image":"cupcake3.jpg", "category":"cup-cakes"},
+    {"name":"Carrot Cupcakes", "price":"1600", "image":"cupcake4.webp", "category":"cup-cakes"},
+    {"name":"Mini Vanilla Cupcake", "price":"1500", "image":"cupcake5.jpg", "category":"cup-cakes"},
+    {"name":"Mini Double Chocolate Cupcake", "price":"1900", "image":"cupcake6.webp", "category":"cup-cakes"}
 ]

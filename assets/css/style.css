@@ -1,4 +1,3 @@
-
 /* iman old css  */
 /* header css start */
 
@@ -497,61 +496,56 @@ nav {
   display: none;
 }
 
-
-
-
-
 /* iman's footer css file */
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.foot{
-background-color: rgba(233, 226, 226, 0.438);
-height: auto;
+.foot {
+  background-color: rgba(233, 226, 226, 0.438);
+  height: auto;
 }
-.subscribe{
-    border: 1px solid black;
-    border-radius: 30px 30px;
+.subscribe {
+  border: 1px solid black;
+  border-radius: 30px 30px;
 }
-.butt{
-    border-radius: 30px 30px;
-}
-
-#fb:hover{
-    transition:0.9s;
-    transform:translateY(-35%);
+.butt {
+  border-radius: 30px 30px;
 }
 
-#twit:hover{
-transition:0.9s;
-transform:translateY(-35%);
+#fb:hover {
+  transition: 0.9s;
+  transform: translateY(-35%);
 }
-#insta:hover{
-transition:0.9s;
-transform: translateY(-35%);
+
+#twit:hover {
+  transition: 0.9s;
+  transform: translateY(-35%);
+}
+#insta:hover {
+  transition: 0.9s;
+  transform: translateY(-35%);
 }
 /* #email{
 max-width: max-content;
 
 } */
-.form_c{
-background-color:rgb(246, 249, 253) ;
+.form_c {
+  background-color: rgb(246, 249, 253);
 }
-.un_li a{
-    color: gray;
-    text-decoration: none;
+.un_li a {
+  color: gray;
+  text-decoration: none;
 }
-.unorder_list{
-    list-style-type: none;
-    color: gray;
-   
-    }
-    .footer_links{
-        text-decoration: none !important;
-        color: gray !important;
-    }
-    .un_li a:hover{
-        color:rgb(69, 147, 236);
-        text-decoration: none;
-    }
+.unorder_list {
+  list-style-type: none;
+  color: gray;
+}
+.footer_links {
+  text-decoration: none !important;
+  color: gray !important;
+}
+.un_li a:hover {
+  color: rgb(69, 147, 236);
+  text-decoration: none;
+}

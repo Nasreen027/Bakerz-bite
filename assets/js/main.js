@@ -11,6 +11,7 @@ const bunsAndRuskContainer = $("#buns-and-rusk-container")
 const dessertsAndPastryContainer = $("#desserts-and-pastry-container")
 const tartsAndCookiesContainer = $("#tarts-and-cookies-container")
 const puffsAndHiTeaContainer = $("#puffs-and-hi-tea-container")
+const searchContainer = $("#search-container")
 
 const productCategories = {
     CAKES:"cakes",
@@ -42,10 +43,6 @@ const products = $.getJSON("./data/products.json", function(data){
 
     
 
-   
-
-
-
     cakesContainer.html(makeProductGrid("Cakes",cakes, "cakes2.jpg"))
     biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, data))
     breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, data))
@@ -60,15 +57,29 @@ const products = $.getJSON("./data/products.json", function(data){
 
 
     //searching products
-    const value = "choco"
+    $(document).on("click", "#submit", function(){
+        let value = $("#search").val()
+        console.log(value);
 
-    const foundProducts = data.filter((item) => {
-        return item.name.toLowerCase().includes(value.toLowerCase())
+        const findProducts = data.filter((item) => {
+            return item.name.toLowerCase().includes(value.toLowerCase())
+        })
+        searchContainer.html(makeProductGrid(`Search results for "${value}"`, findProducts, data))
+        $("#root").toggle();
     })
+    
 
-    console.log(foundProducts)
+    // console.log(findProducts)
 
 })
+//  function find(data){
+//     let inp = document.getElementById("search").value;
+//     let find = data.filter((item)=>{
+//         return item.name.toLowerCase().includes(inp.toLowerCase())
+//     })
+//  }
+
+
 
 
 

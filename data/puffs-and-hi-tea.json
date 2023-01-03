@@ -1,8 +1,0 @@
-[
-    {"name":"Bakar Khani", "price":"480", "image":"puf1.jpg", "category":"puffs-and-hi-tea"},
-    {"name":"Fruit Cake", "price":"260", "image":"puf2.webp", "category":"puffs-and-hi-tea"},
-    {"name":"Marble Cake", "price":"350", "image":"puf3.jpg", "category":"puffs-and-hi-tea"},
-    {"name":"Honey Walnut Cake", "price":"450", "image":"puf4.jpg", "category":"puffs-and-hi-tea"},
-    {"name":"Plain Cakes", "price":"150", "image":"puf5.jpg", "category":"puffs-and-hi-tea"},
-    {"name":"Plain Alaska", "price":"250", "image":"puf6.webp", "category":"puffs-and-hi-tea"}
-]

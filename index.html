@@ -11,8 +11,8 @@
   </head>
   <body>
     <input type="text" name="" id="search">
-    <button type="submit" id="submit">Search</button>
     <section id="search-container"></section>
+    <section id="cart-container"></section>
     <main id="root">
       <section id="cakes-container"></section>
       <section id="cupcakes-container"></section>
@@ -25,8 +25,9 @@
       <section id="desserts-and-pastry-container"></section>
       <section id="tarts-and-cookies-container"></section>
       <section id="puffs-and-hi-tea-container"></section>
+      <section id="merchandise-container"></section>
 
-      <div
+      <div id="cart-main-button"
         style="
           width: 60px;
           /* background: red; */
@@ -41,7 +42,7 @@
           align-items: center;
         "
       >
-        <div
+        <div id="cart-count"
           style="
             position: relative;
             top: -25px;
@@ -53,7 +54,6 @@
             display: flex;
             justify-content: center;
             align-items: center;">
-          2
         </div>
         <h2 style="position: relative; left: -10px;"><img src="assets/images/shopping-cart.svg" alt=""></h2>
       </div>

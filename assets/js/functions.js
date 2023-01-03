@@ -17,7 +17,7 @@ function makeProductColumn(_product = {}){
 <div class="card-body container-fluid">
 <h5 class="card-title">${_product.name}</h5>
 <p class="card-text">${_product.price}</p>
-<button class='btn-cart' data-product="${_product.name}">add to cart</button>
+<button class='btn-cart' data-product='${JSON.stringify(_product)}'>add to cart</button>
 </div>
 </div>
 </div>`
@@ -42,10 +42,40 @@ function makeProductGrid(_title, _products=[], image){
 
 
 }
+function makeCartColumn(_cartdata= {}){
+  return` <div class="col-md-6 col-sm-6 pd">
+  <div class="cart-cards">
+    <div class="left"><a href=""><img src="${defaultImageUrl}${_cartdata.image}" class="card-img-top" style="height:10rem" alt="..."></a></div>
+    <div class="right"><h5>${_cartdata.name}</h5>
+    <p class="card-text">${_cartdata.price}</p>
+    <button class="cart-remove" >Delete</button></div>
+  </div>
+</div>`
+} 
+function makeCartGrid(_cartTitle ,_cartproducts =[]){
+  let cartGridHtml = ` <div class="container mt-5">
+  <div><h2 class="text-center">${_cartTitle}</h2></div>
+  <div class="row">`
+  const _cartColumns = _cartproducts.map((item, index)=>{
+    return makeCartColumn(item,index)
+  })
+  cartGridHtml +=  _cartColumns.join('')
+
+  cartGridHtml += ` </div>
+  </div>` 
+
+  return cartGridHtml
+}
 
 $(document).on("click", '.btn-cart', function() {
   const currentButton = $(this)
   const product = currentButton.attr("data-product")
-  console.log(product)
+  // console.log(product)
   addToCart(product)
+  // $("#root").toggle();
 })
+// $(document).on("click", ".cart-remove", function(){
+//   let removeCurrentBtn = $(this)
+//   let removeCartItem = removeCurrentBtn.attr("data-index")
+//   removeItem = localStorage.removeItem(removeCartItem)
+// })

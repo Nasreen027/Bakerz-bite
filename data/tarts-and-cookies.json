@@ -1,8 +1,0 @@
-[
-    {"name":"Lotus Cheese Cake Tart", "price":"280", "image":"tart1.jpg", "category":"tarts-and-cookies"},
-    {"name":"Salted Caramel And Dark Chocolate Tart", "price":"260", "image":"tart2.jpg", "category":"tarts-and-cookies"},
-    {"name":"Tiramisu Tart", "price":"50", "image":"tart3.jpg", "category":"tarts-and-cookies"},
-    {"name":"Chocolate Tart", "price":"150", "image":"tart4.jpg", "category":"tarts-and-cookies"},
-    {"name":"Nut Tart", "price":"150", "image":"tart5.jpg", "category":"tarts-and-cookies"},
-    {"name":"Chocolate Chip Cookies", "price":"150", "image":"tart6.webp", "category":"tarts-and-cookies"}
-]

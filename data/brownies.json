@@ -1,7 +1,0 @@
-[
-    {"name":"Butterscotch Blondies", "price":"160", "image":"brownie1.jpg", "category":"brownies"},
-    {"name":"Caramel Nut Brownie", "price":"1600", "image":"brownie2.jpg", "category":"brownies"},
-    {"name":"Double Fudge Brownie", "price":"1700", "image":"brownie3.jpg", "category":"brownies"},
-    {"name":"Nutella Brownies", "price":"1600", "image":"brownie4.jpg", "category":"brownies"},
-    {"name":"Triple Chocolate Brownie", "price":"1500", "image":"brownie5.jpg", "category":"brownies"}
-]

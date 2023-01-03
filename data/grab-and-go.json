@@ -1,8 +1,0 @@
-[
-    {"name":"Caesar Salad", "price":"340", "image":"grab1.webp", "category":"grab-and-go"},
-    {"name":"Chana Chaat", "price":"220", "image":"grab2.webp", "category":"grab-and-go"},
-    {"name":"Chicken And Herb Sandwich", "price":"320", "image":"grab3.jpg", "category":"grab-and-go"},
-    {"name":"Chicken Caesar Wrap", "price":"230", "image":"grab4.jpg", "category":"grab-and-go"},
-    {"name":"Korean Chicken Sliders", "price":"180", "image":"grab5.webp", "category":"grab-and-go"},
-    {"name":"Mexican Chicken Quesadilla", "price":"250", "image":"grab6.webp", "category":"grab-and-go"}
-]

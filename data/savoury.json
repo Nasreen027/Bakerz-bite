@@ -1,8 +1,0 @@
-[
-    {"name":"Chicken And Mushroom Quiche (Slice)", "price":"180", "image":"sav1.jpg", "category":"savoury"},
-    {"name":"Chilli Chips", "price":"180", "image":"sav2.jpeg", "category":"savoury"},
-    {"name":"Potato Samosas", "price":"50", "image":"sav3.webp", "category":"savoury"},
-    {"name":"Cheese Pizza", "price":"150", "image":"sav4.webp", "category":"savoury"},
-    {"name":"Tandoori Chicken Cheese Patties", "price":"100", "image":"sav5.jpg", "category":"savoury"},
-    {"name":"Vegetable Patties", "price":"100", "image":"sav6.webp", "category":"savoury"}
-]

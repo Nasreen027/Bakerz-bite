@@ -549,3 +549,22 @@ max-width: max-content;
   color: rgb(69, 147, 236);
   text-decoration: none;
 }
+#cart-container{
+  display: none;
+}
+.cart-cards{
+  display: flex;
+  justify-content: space-evenly;
+  /* height: 30px; */
+  width: 70%;
+
+}
+/* .left{
+  background-color: #a6c1ee;
+  height: 13rem;
+} */
+.right{
+  /* background-color: #fcb416; */
+  height: 10rem;
+  padding-left: 5%;
+}

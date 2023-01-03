@@ -12,6 +12,11 @@ const dessertsAndPastryContainer = $("#desserts-and-pastry-container")
 const tartsAndCookiesContainer = $("#tarts-and-cookies-container")
 const puffsAndHiTeaContainer = $("#puffs-and-hi-tea-container")
 const searchContainer = $("#search-container")
+const merchandiseContainer = $("#merchandise-container")
+const cartContainer = $("#cart-container")
+const cartCountContainer = $("#cart-count")
+const cartMainButton = $("#cart-main-button")
+
 
 const productCategories = {
     CAKES:"cakes",
@@ -24,7 +29,8 @@ const productCategories = {
     GRABANDGO:"grab-and-go",
     PUFFSANDHITEA:"puffs-and-hi-tea",
     SAVOURY:"savoury",
-    TARTSANDCOOKIES:"tarts-and-cookies"
+    TARTSANDCOOKIES:"tarts-and-cookies",
+    MERCHANDISE :"merchandise"
 }
 
 const products = $.getJSON("./data/products.json", function(data){
@@ -40,24 +46,33 @@ const products = $.getJSON("./data/products.json", function(data){
     const puffsAndHiTea = data.filter((item)=> item.category === productCategories.PUFFSANDHITEA)
     const savoury = data.filter((item)=> item.category === productCategories.SAVOURY)
     const tartsAndCookies = data.filter((item)=> item.category === productCategories.TARTSANDCOOKIES)
+    const merchandise = data.filter((item)=>item.category===productCategories.MERCHANDISE)
+    let carthtml = localStorage.getItem("cart")||"[]"
+    carthtml = JSON.parse(carthtml)
+    carthtml = carthtml.map((item)=>JSON.parse(item))
+    let cartCount = carthtml.length
+    // console.log(carthtml)
 
     
 
     cakesContainer.html(makeProductGrid("Cakes",cakes, "cakes2.jpg"))
-    biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, data))
-    breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, data))
-    browniesContainer.html(makeProductGrid("Brownies", brownies, data))
-    bunsAndRuskContainer.html(makeProductGrid("Buns And Rusk", bunsAndRusk, data))
-    cupCakesContainer.html(makeProductGrid("Cupcakes", cupCakes, data))
-    dessertsAndPastryContainer.html(makeProductGrid("Desserts And Pastry", dessertsAndPastry, data))
-    grabAndGoContainer.html(makeProductGrid("Grab And Go", grabAndGo, data))
-    puffsAndHiTeaContainer.html(makeProductGrid("Puffs And Hi Tea", puffsAndHiTea, data))
-    savouryContainer.html(makeProductGrid("Savoury", savoury, data))
-    tartsAndCookiesContainer.html(makeProductGrid("Tarts And Cookies", tartsAndCookies, data))
+    biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, ))
+    breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, ))
+    browniesContainer.html(makeProductGrid("Brownies", brownies,))
+    bunsAndRuskContainer.html(makeProductGrid("Buns And Rusk", bunsAndRusk, ))
+    cupCakesContainer.html(makeProductGrid("Cupcakes", cupCakes, ))
+    dessertsAndPastryContainer.html(makeProductGrid("Desserts And Pastry", dessertsAndPastry, ))
+    grabAndGoContainer.html(makeProductGrid("Grab And Go", grabAndGo, ))
+    puffsAndHiTeaContainer.html(makeProductGrid("Puffs And Hi Tea", puffsAndHiTea, ))
+    savouryContainer.html(makeProductGrid("Savoury", savoury, ))
+    tartsAndCookiesContainer.html(makeProductGrid("Tarts And Cookies", tartsAndCookies, ))
+    merchandiseContainer.html(makeProductGrid("Merchandise", merchandise, ))
+    cartContainer.html(makeCartGrid("Cart", carthtml))
+    cartCountContainer.html(cartCount)
 
 
     //searching products
-    $(document).on("click", "#submit", function(){
+    $(document).on("keyup", "#search", function(){
         let value = $("#search").val()
         // console.log(value);
 
@@ -67,8 +82,15 @@ const products = $.getJSON("./data/products.json", function(data){
         searchContainer.html(makeProductGrid(`Search results for "${value}"`, findProducts, data))
         $("#root").toggle();
     })
-    
-
     // console.log(findProducts)
 
+    
+
+
+})
+/// cart///
+$(document).on("click", "#cart-main-button", function(){
+    $("#cart-container").fadeIn();
+    $("#root").toggle();
+    $("#search").toggle();
 })

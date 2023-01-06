@@ -48,10 +48,10 @@ function makeCartColumn(_cartdata= {}){
     <div class="left"><a href=""><img src="${defaultImageUrl}${_cartdata.image}" class="card-img-top" style="height:10rem" alt="..."></a></div>
     <div class="right"><h5>${_cartdata.name}</h5>
     <p class="card-text">${_cartdata.price}</p>
-    <button class="cart-remove" >Delete</button></div>
+    <button class="cart-remove">Delete</button></div>
   </div>
 </div>`
-} 
+}
 function makeCartGrid(_cartTitle ,_cartproducts =[]){
   let cartGridHtml = ` <div class="container mt-5">
   <div><h2 class="text-center">${_cartTitle}</h2></div>

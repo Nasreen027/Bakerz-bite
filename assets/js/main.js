@@ -55,7 +55,7 @@ const products = $.getJSON("./data/products.json", function(data){
 
     
 
-    cakesContainer.html(makeProductGrid("Cakes",cakes, "cakes2.jpg"))
+    cakesContainer.html(makeProductGrid("Cakes",cakes, "cakes-poster.jpg"))
     biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, ))
     breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, ))
     browniesContainer.html(makeProductGrid("Brownies", brownies,))
@@ -83,10 +83,6 @@ const products = $.getJSON("./data/products.json", function(data){
         $("#root").toggle();
     })
     // console.log(findProducts)
-
-    
-
-
 })
 /// cart///
 $(document).on("click", "#cart-main-button", function(){

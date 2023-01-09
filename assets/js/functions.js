@@ -5,6 +5,12 @@ cart = JSON.parse(cart)
 function addToCart(product) {
     cart = [...cart, product]
     localStorage.setItem("cart", JSON.stringify(cart))
+    let carthtml = localStorage.getItem("cart")||"[]"
+    carthtml = JSON.parse(carthtml)
+    carthtml = carthtml.map((item)=>JSON.parse(item))
+    let cartCount = carthtml.length
+    const cartCountContainer = $("#cart-count")
+    cartCountContainer.html(cartCount)
 }
 
 
@@ -26,7 +32,7 @@ function makeProductColumn(_product = {}){
 function makeProductGrid(_title, _products=[], image){
     let gridHtml = `
       <div class="container mt-5">
-      <div style='background:url(${defaultImageUrl}${image})'><h2 class="text-center">${_title}</h2></div>
+      <div style='height:4rem; background-repeat: no-repeat;padding:5%;background:url(${defaultImageUrl}${image})'><h2 class="text-center">${_title}</h2></div>
       <div class="row">`
 
       const _columns = _products.map((item, index)=>{
@@ -79,3 +85,15 @@ $(document).on("click", '.btn-cart', function() {
 //   let removeCartItem = removeCurrentBtn.attr("data-index")
 //   removeItem = localStorage.removeItem(removeCartItem)
 // })
+
+///remove item from cart
+function removeItem(id){
+  let remove = localStorage.getItem("cart")||"[]"
+  remove = JSON.parse(remove)
+}
+
+const findIndex = remove.findIndex((item, index)=>{
+  if(item.id == id){
+    return item
+  }
+})

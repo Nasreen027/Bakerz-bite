@@ -29,10 +29,10 @@ function makeProductColumn(_product = {}){
 </div>`
 }
 
-function makeProductGrid(_title, _products=[], image){
+function makeProductGrid(_title, _products=[], _color){
     let gridHtml = `
       <div class="container mt-5">
-      <div style='height:4rem; background-repeat: no-repeat;padding:5%;background:url(${defaultImageUrl}${image})'><h2 class="text-center">${_title}</h2></div>
+      <div><h2 style="background-color:${_color}; padding:3%; color:white;" class="text-center">${_title}</h2></div>
       <div class="row">`
 
       const _columns = _products.map((item, index)=>{

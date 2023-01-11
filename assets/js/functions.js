@@ -58,9 +58,9 @@ function makeCartColumn(_cartdata= {}){
   </div>
 </div>`
 }
-function makeCartGrid(_cartTitle ,_cartproducts =[]){
+function makeCartGrid(_cartTitle ,_cartproducts =[], _cartColor){
   let cartGridHtml = ` <div class="container mt-5">
-  <div><h2 class="text-center">${_cartTitle}</h2></div>
+  <div><h2 style="background-color:${_cartColor};padding:3%; color:#fcb416;" class="text-center">${_cartTitle}</h2></div>
   <div class="row">`
   const _cartColumns = _cartproducts.map((item, index)=>{
     return makeCartColumn(item,index)

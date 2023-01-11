@@ -1,5 +1,6 @@
 const rootContainer = $("#root")
 const defaultImageUrl = ("./assets/images/")
+const offersContainer = $("#offers-container")
 const cakesContainer = $("#cakes-container")
 const cupCakesContainer = $("#cupcakes-container")
 const browniesContainer = $("#brownies-container")
@@ -67,7 +68,7 @@ const products = $.getJSON("./data/products.json", function(data){
     savouryContainer.html(makeProductGrid("Savoury", savoury, "#0E2E46"))
     tartsAndCookiesContainer.html(makeProductGrid("Tarts And Cookies", tartsAndCookies, "#f2c12e"))
     merchandiseContainer.html(makeProductGrid("Merchandise", merchandise, "#227F8A"))
-    cartContainer.html(makeCartGrid("Cart", carthtml))
+    cartContainer.html(makeCartGrid("Cart", carthtml, "#074842"))
     cartCountContainer.html(cartCount)
 
 

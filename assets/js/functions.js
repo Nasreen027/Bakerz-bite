@@ -13,6 +13,23 @@ function addToCart(product) {
     cartCountContainer.html(cartCount)
 }
 
+// remove item from cart or local storage
+$(document).on("click", '.cart-remove', function() {
+  let _name = $(this).attr('data-index')
+  let remove = localStorage.getItem("cart");
+  // console.log(remove)
+  remove = JSON.parse(remove);
+  //let r= remove.filter((item)=> item.id=== id)
+  let objToDelete = null
+  for(let r of remove){
+    r = JSON.parse(r)
+    if(_name == r.name){
+      objToDelete = r
+      break;
+    }
+  }
+})
+
 
 function makeProductColumn(_product = {}){
     return ` <div class="col-md-4 col-sm-6 pd display">
@@ -54,7 +71,7 @@ function makeCartColumn(_cartdata= {}){
     <div class="left"><a href=""><img src="${defaultImageUrl}${_cartdata.image}" class="card-img-top" style="height:10rem" alt="..."></a></div>
     <div class="right"><h5>${_cartdata.name}</h5>
     <p class="card-text">${_cartdata.price}</p>
-    <button class="cart-remove">Delete</button></div>
+    <button class="cart-remove"  data-index='${_cartdata.name}' >Delete</button></div>
   </div>
 </div>`
 }
@@ -80,20 +97,4 @@ $(document).on("click", '.btn-cart', function() {
   addToCart(product)
   // $("#root").toggle();
 })
-// $(document).on("click", ".cart-remove", function(){
-//   let removeCurrentBtn = $(this)
-//   let removeCartItem = removeCurrentBtn.attr("data-index")
-//   removeItem = localStorage.removeItem(removeCartItem)
-// })
 
-///remove item from cart
-function removeItem(id){
-  let remove = localStorage.getItem("cart")||"[]"
-  remove = JSON.parse(remove)
-}
-
-const findIndex = remove.findIndex((item, index)=>{
-  if(item.id == id){
-    return item
-  }
-})

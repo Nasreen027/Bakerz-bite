@@ -20,6 +20,7 @@ const cartMainButton = $("#cart-main-button")
 
 
 const productCategories = {
+    OFFERS:"offers",
     CAKES:"cakes",
     BISCUITS:"biscuits",
     BREAD:"bread",
@@ -36,8 +37,9 @@ const productCategories = {
 
 const products = $.getJSON("./data/products.json", function(data){
 
-    const cakes = data.filter((item) => item.category===productCategories.CAKES)
-    const biscuits = data.filter((item) => item.category===productCategories.BISCUITS)
+    const offers = data.filter((item)=> item.category === productCategories.OFFERS )
+    const cakes = data.filter((item) => item.category === productCategories.CAKES)
+    const biscuits = data.filter((item) => item.category === productCategories.BISCUITS)
     const bread = data.filter((item) => item.category === productCategories.BREAD)
     const brownies = data.filter((item)=> item.category === productCategories.BROWNIES)
     const bunsAndRusk = data.filter((item)=> item.category === productCategories.BUNSANDRUSK)

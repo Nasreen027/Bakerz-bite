@@ -13,23 +13,26 @@ function addToCart(product) {
     cartCountContainer.html(cartCount)
 }
 
-// remove item from cart or local storage
+// function removeItem(id){
+
+
+// }
 $(document).on("click", '.cart-remove', function() {
   let _name = $(this).attr('data-index')
   let remove = localStorage.getItem("cart");
   // console.log(remove)
   remove = JSON.parse(remove);
-  //let r= remove.filter((item)=> item.id=== id)
+  //let r= remove.filter((item)=> item.id=== idd)
   let objToDelete = null
   for(let r of remove){
     r = JSON.parse(r)
     if(_name == r.name){
       objToDelete = r
+      // console.log(r)
       break;
     }
   }
 })
-
 
 function makeProductColumn(_product = {}){
     return ` <div class="col-md-4 col-sm-6 pd display">
@@ -39,7 +42,7 @@ function makeProductColumn(_product = {}){
 </div>
 <div class="card-body container-fluid">
 <h5 class="card-title">${_product.name}</h5>
-<p class="card-text">${_product.price}</p>
+<p class="card-text" style="font-size:1.1rem;color:#074842;">${_product.price}</p>
 <button class='btn-cart' data-product='${JSON.stringify(_product)}'>add to cart</button>
 </div>
 </div>
@@ -97,4 +100,6 @@ $(document).on("click", '.btn-cart', function() {
   addToCart(product)
   // $("#root").toggle();
 })
+
+
 

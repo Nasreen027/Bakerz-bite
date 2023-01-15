@@ -58,6 +58,7 @@ const products = $.getJSON("./data/products.json", function(data){
 
     
 
+    offersContainer.html(makeProductGrid("Offers", offers, "#A47A49"))
     cakesContainer.html(makeProductGrid("Cakes",cakes, " #A47A49"))
     biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, "#C690A8"))
     breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, "#9BAD45"))

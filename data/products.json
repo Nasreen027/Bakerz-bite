@@ -77,4 +77,11 @@
 {"id":76,"name":"Full Frame Cat Eye Glasses","price":"Rs:150","image":"glass3.jpg","category":"merchandise"},
 {"id":77,"name":"Ceramic White Trays","price":"Rs:1500","image":"tray1.jpg","category":"merchandise"},
 {"id":78,"name":"Aesthetic Wooden Tray","price":"Rs:1000","image":"tray2.jpeg","category":"merchandise"},
-{"id":79,"name":"Wooden Tray Pair of 4","price":"Rs:2000","image":"tray3.jpg","category":"merchandise"}]
+{"id":79,"name":"Wooden Tray Pair of 4","price":"Rs:2000","image":"tray3.jpg","category":"merchandise"},
+{"id":80,"name":"Deal of 2 Toffee Three Milk Cake","price":"<del>Rs.3200</del>  Rs.2800","image":"cakes2.jpg","category":"offers"},
+{"id":81,"name":"Deal of 4 Packs of Chocolate Chip biscuit","price":"Rs:<del>Rs.680</del>  Rs.580","image":"bis3.jpg","category":"offers"},
+{"id":82,"name":"Deal of 4 Butterscotch Blondies","price":"Rs:<del>Rs.640</del>  Rs.600","image":"brownie1.jpg","category":"offers"},
+{"id":83,"name":"Deal of 2 Cheese Pizza","price":"Rs:<del>Rs.300</del>  Rs.270","image":"sav4.webp","category":"offers"},
+{"id":60,"name":"Tandoori Chicken Cheese Patties","price":"Rs:100","image":"sav5.jpg","category":"savoury"}
+
+]

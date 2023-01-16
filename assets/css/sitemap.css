@@ -1,0 +1,22 @@
+#map{
+    /* text-align: center; */
+    border-bottom: 1px solid  #074242;
+    margin-bottom: 30px;
+}
+#map h4{
+    color:#074242;
+    
+   
+}
+.sites p a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ;
+   
+
+}
+.sites p a:hover{
+    color: #074242;
+margin-left: 5px;
+}

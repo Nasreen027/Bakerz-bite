@@ -14,6 +14,7 @@ const tartsAndCookiesContainer = $("#tarts-and-cookies-container")
 const puffsAndHiTeaContainer = $("#puffs-and-hi-tea-container")
 const searchContainer = $("#search-container")
 const merchandiseContainer = $("#merchandise-container")
+const contactContainer = $("#contact-container")
 const cartContainer = $("#cart-container")
 const cartCountContainer = $("#cart-count")
 const cartMainButton = $("#cart-main-button")
@@ -58,7 +59,7 @@ const products = $.getJSON("./data/products.json", function(data){
 
     
 
-    offersContainer.html(makeProductGrid("Offers", offers, "#A47A49"))
+    offersContainer.html(makeProductGrid("Offers", offers, "#fcb416"))
     cakesContainer.html(makeProductGrid("Cakes",cakes, " #A47A49"))
     biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, "#C690A8"))
     breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, "#9BAD45"))
@@ -84,7 +85,7 @@ const products = $.getJSON("./data/products.json", function(data){
             return item.name.toLowerCase().includes(value.toLowerCase())
         })
         searchContainer.html(makeProductGrid(`Search results for "${value}"`, findProducts, data))
-        $("#root").toggle();
+        $("#root").hide();
     })
     // console.log(findProducts)
 })

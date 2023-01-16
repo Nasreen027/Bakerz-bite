@@ -17,22 +17,46 @@ function addToCart(product) {
 
 
 // }
-$(document).on("click", '.cart-remove', function() {
-  let _name = $(this).attr('data-index')
-  let remove = localStorage.getItem("cart");
-  // console.log(remove)
-  remove = JSON.parse(remove);
-  //let r= remove.filter((item)=> item.id=== idd)
-  let objToDelete = null
-  for(let r of remove){
-    r = JSON.parse(r)
-    if(_name == r.name){
-      objToDelete = r
-      // console.log(r)
-      break;
+// $(document).on("click", '.cart-remove', function() {
+//   let _name = $(this).attr('data-index')
+//   let remove = localStorage.getItem("cart");
+//   // console.log(remove)
+//   remove = JSON.parse(remove);
+//   //let r= remove.filter((item)=> item.id=== idd)
+//   let objToDelete = null
+//   for(let r of remove){
+//     r = JSON.parse(r)
+//     if(_name == r.name){
+//       objToDelete = r
+//      remove = localStorage.removeItem('r');
+
+//       console.log(r)
+//       break;
+//     }
+//   }
+// })
+
+function deleteItemFromCart(id){
+  let deleteItem = localStorage.getItem("cart")||"[]"
+  deleteItem = JSON.parse(deleteItem);
+
+  const index = deleteItem.findIndex((item)=>{
+    if(item.id == id){
+      return item
     }
-  }
-})
+  })
+
+  console.log("index: ===> ", index)
+
+  // deleteItem.splice(index,1)
+  // localStorage.setItem("cart", JSON.stringify([..._deleteItem]))
+
+ }
+
+ $(document).on("click", ".cart-remove", function(e){
+  const id = $(this).attr("data-id")
+  deleteItemFromCart(id);
+ })
 
 function makeProductColumn(_product = {}){
     return ` <div class="col-md-4 col-sm-6 pd display">
@@ -52,7 +76,7 @@ function makeProductColumn(_product = {}){
 function makeProductGrid(_title, _products=[], _color){
     let gridHtml = `
       <div class="container mt-5">
-      <div><h2 style="background-color:${_color}; padding:3%; color:white;" class="text-center">${_title}</h2></div>
+      <div><h2 style="background-color:${_color}; padding:3%; color:black;" class="text-center">${_title}</h2></div>
       <div class="row">`
 
       const _columns = _products.map((item, index)=>{
@@ -74,10 +98,11 @@ function makeCartColumn(_cartdata= {}){
     <div class="left"><a href=""><img src="${defaultImageUrl}${_cartdata.image}" class="card-img-top" style="height:10rem" alt="..."></a></div>
     <div class="right"><h5>${_cartdata.name}</h5>
     <p class="card-text">${_cartdata.price}</p>
-    <button class="cart-remove"  data-index='${_cartdata.name}' >Delete</button></div>
+    <button class="cart-remove"  data-index='${_cartdata.name}' data-id='${_cartdata.id}' >Delete</button></div>
   </div>
 </div>`
 }
+
 function makeCartGrid(_cartTitle ,_cartproducts =[], _cartColor){
   let cartGridHtml = ` <div class="container mt-5">
   <div><h2 style="background-color:${_cartColor};padding:3%; color:#fcb416;" class="text-center">${_cartTitle}</h2></div>
@@ -96,9 +121,7 @@ function makeCartGrid(_cartTitle ,_cartproducts =[], _cartColor){
 $(document).on("click", '.btn-cart', function() {
   const currentButton = $(this)
   const product = currentButton.attr("data-product")
-  // console.log(product)
   addToCart(product)
-  // $("#root").toggle();
 })
 
 

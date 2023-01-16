@@ -2,7 +2,7 @@
 /* header css start */
 
 /* -------------navbar formatting star-------------- */
-@font-face {
+/* @font-face {
   font-family: joining;
   src: url(images/write/Corinthia-Bold.ttf);
 }
@@ -15,12 +15,12 @@
 }
 .tnav {
   width: 100%;
-}
+} */
 /* #navwood{
   background-color: white;
   color: gray;
 } */
-.all {
+/* .all {
   padding-left: 0px !important;
 }
 .tnav ul li a {
@@ -35,64 +35,64 @@
 .tnav ul li a img:hover {
   color: blue;
 }
-.ul1 li {
+.ul1 li { */
   /* margin-left: 22px; */
-  position: relative;
+  /* position: relative;
   left: 22px;
 }
-#inp {
+#inp { */
   /* display: none; */
-}
+/* }
 .tnavd {
   color: black;
-}
+} */
 /*-------- navbar forrmatting end ------*/
 /*------------ for video -----------*/
-#discover {
+/* #discover {
   object-fit: fill;
   height: 510px;
   width: 100%;
   position: absolute;
-  top: 70px;
+  top: 70px; */
 
   /* z-index: -20; */
-}
+/* } */
 
 /*---------- it's end -------*/
-#heading {
-  color: white;
+/* #heading {
+  color: white; */
   /* background-color: aqua; */
   /* position: relative; */
-  font-family: joining;
+  /* font-family: joining; */
   /* font-weight: 800; */
-  font-size: 600%;
-}
+  /* font-size: 600%;
+} */
 html {
   scroll-behavior: smooth;
 }
-header {
+/* header {
   width: 100%;
   z-index: 1;
-}
+} */
 /* #arabicfonts{
   display: none;
 } */
 
-#q {
+/* #q {
   color: white;
   font-style: italic;
   font-size: 20px;
-}
-.vpara {
-  font-size: 1rem;
+} */
+/* .vpara {
+  font-size: 1rem; */
   /* background-color: #d1d6de;
   opacity: 2; */
-}
+/* } */
 
-#top {
+/* #top {
   padding: 120px 30px;
-}
-#top p {
+} */
+/* #top p {
   color: white;
   padding: 30px 0;
 }
@@ -111,9 +111,9 @@ header {
   padding: 10px 0;
   margin: 0px 10px;
   border-radius: 3%;
-}
+} */
 /* for video button */
-#btn1 {
+/* #btn1 {
   background: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.7),
@@ -135,12 +135,12 @@ header {
     rgba(255, 255, 255, 0.7)
   );
   transition: 1s;
-}
+} */
 /* for video button end----*/
 
 /* mediaquery */
 /* laptop */
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
   #discover {
     height: 28rem;
   }
@@ -157,9 +157,9 @@ header {
   .newarrival {
     margin-top: -15% !important;
   }
-  #heading {
+  #heading { */
     /* font-size: 8rem; */
-  }
+  /* }
 }
 @media screen and (max-width: 1024px) {
   .is {
@@ -175,11 +175,11 @@ header {
   .newarrival {
     margin-top: -15% !important;
   }
-}
+} */
 
 /* tablet */
-@media screen and (max-width: 768px) {
-  #discover {
+/* @media screen and (max-width: 768px) { */
+  /* #discover {
     height: 450px;
     width: 100%;
   }
@@ -190,7 +190,7 @@ header {
   .is {
     position: relative;
     /* top:100px; */
-    height: 9rem;
+    /* height: 9rem;
     width: 155px;
   }
   #top {
@@ -202,9 +202,9 @@ header {
   .newarrival {
     margin-top: -50px !important;
   }
-}
+}  */
 /* mobile -L  */
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   #discover {
     height: 405px;
   }
@@ -227,9 +227,9 @@ header {
   .vpara {
     font-size: 15px;
   }
-}
+} */
 /* mobile-m */
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   #discover {
     height: 460px;
     width: 100%;
@@ -241,9 +241,9 @@ header {
     height: 8rem;
   }
 
-  #top {
+  #top { */
     /* padding: 15px 0px; */
-  }
+  /* }
   #heading {
     font-size: 85px;
     padding-top: 90px;
@@ -254,9 +254,9 @@ header {
   .vpara {
     font-size: 15px;
   }
-}
+} */
 /* mobile-s */
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   #discover {
     height: 450px;
     width: 100%;
@@ -268,9 +268,9 @@ header {
     height: 7rem;
   }
 
-  #top {
+  #top { */
     /* padding: 15px 0px; */
-  }
+  /* }
   #heading {
     font-size: 60px;
     padding-top: 90px;
@@ -281,7 +281,7 @@ header {
   .vpara {
     font-size: 15px;
   }
-}
+} */
 /*---------- about page ---------*/
 #about {
   height: auto;
@@ -303,10 +303,10 @@ header {
 #heada {
   color: rgb(0, 179, 255);
 }
-#vida {
+/* #vida { */
   /* height: 500px; */
-  width: 100%;
-}
+  /* width: 100%;
+} */
 
 /* l-mobile */
 @media screen and (max-width: 425px) {
@@ -332,21 +332,21 @@ header {
 .btn_css:active {
   border: none;
 }
-nav {
+/* nav {
   position: fixed !important;
   top: 20px;
   width: 100%;
   background-color: white;
   z-index: 20;
-}
+} */
 /* header css end */
 /* cards css start */
 * {
   margin: 0 auto;
 }
-#arrival {
+/* #arrival {
   margin-top: 10%;
-}
+} */
 .display {
   display: flex;
   justify-content: space-evenly;
@@ -354,7 +354,7 @@ nav {
 .pd {
   padding: 2%;
 }
-.panel {
+/* .panel {
   background-size: cover;
   background-repeat: no-repeat;
   border: 30px solid white !important;
@@ -366,12 +366,12 @@ nav {
 .fourpanel {
   background-image: url("images/f1.webp");
   height: 30rem;
-}
-.btncss {
+} */
+/* .btncss {
   position: relative;
   top: 70%;
   left: 20%;
-}
+} */
 .zoom:hover {
   /* -ms-transform: scale(1.2); 
         -webkit-transform: scale(1.2); */
@@ -380,16 +380,16 @@ nav {
   overflow: hidden;
 }
 /* card css end */
-.bt {
+/* .bt {
   margin: 10px;
   padding: 10px;
   text-align: center;
   /* text-transform: uppercase; */
-  transition: 0.5s;
+  /* transition: 0.5s;
   background-size: 200% auto;
-  color: black;
+  color: black; */
   /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-  box-shadow: 0 0 20px #eee;
+  /* box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   background-image: linear-gradient(
     to right,
@@ -397,17 +397,17 @@ nav {
     #a6c1ee 51%,
     #fbc2eb 100%
   );
-}
-.btn:hover {
+} */
+/* .btn:hover {
   background-position: right center; /* change the direction of the change here */
-}
-.top {
+/* }  */
+/* .top {
   display: flex;
   justify-content: space-between;
   width: 98% !important;
-  /* margin-top: 15%; */
-}
-@media (max-width: 768px) {
+  margin-top: 15%;
+} */
+/* @media (max-width: 768px) {
   .newarrival {
     margin-top: 0%;
   }
@@ -424,9 +424,9 @@ nav {
 .right {
   width: 50%;
   text-align-last: left;
-}
+} */
 /* arabicfonts css start */
-.afonts {
+/* .afonts {
   background-image: linear-gradient(
     to right,
     #fbc2eb 0%,
@@ -446,8 +446,8 @@ nav {
     font-size: 1rem;
   }
 }
-.a1 {
-  font-family: IBM Plex Sans Arabic;
+/* .a1 { */
+  /* font-family: IBM Plex Sans Arabic;
 }
 .a2 {
   font-family: Noto Naskh Arabic;
@@ -457,11 +457,11 @@ nav {
 }
 .a4 {
   font-family: Noto Kufi Arabic;
-}
+} */
 /* arabicfonts css end */
 
 /* west font css start */
-.w1 {
+/* .w1 {
   font-family: Noto Serif Display;
 }
 .w2 {
@@ -472,11 +472,11 @@ nav {
 }
 .w4 {
   font-family: Noto Sans Symbols;
-}
+} */
 /* west font css end */
 
 /* east font css start */
-.e1 {
+/* .e1 {
   font-family: Noto Sans Simplified Chinese;
 }
 .e2 {
@@ -487,14 +487,14 @@ nav {
 }
 .e4 {
   font-family: Noto Serif Simplified Chinese;
-}
+} */
 /* east font css end */
-#qalams,
+/* #qalams,
 #arabicfonts,
 #westfonts,
 #eastfonts {
   display: none;
-}
+} */ 
 
 /* iman's footer css file */
 * {

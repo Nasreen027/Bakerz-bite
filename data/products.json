@@ -82,6 +82,7 @@
 {"id":81,"name":"Deal of 4 Packs of Chocolate Chip biscuit","price":"Rs:<del>Rs.680</del>  Rs.580","image":"bis3.jpg","category":"offers"},
 {"id":82,"name":"Deal of 4 Butterscotch Blondies","price":"Rs:<del>Rs.640</del>  Rs.600","image":"brownie1.jpg","category":"offers"},
 {"id":83,"name":"Deal of 2 Cheese Pizza","price":"Rs:<del>Rs.300</del>  Rs.270","image":"sav4.webp","category":"offers"},
-{"id":60,"name":"Tandoori Chicken Cheese Patties","price":"Rs:100","image":"sav5.jpg","category":"savoury"}
+{"id":60,"name":"Deal of 4 Tandoori Chicken Cheese Patties","price":"Rs:<del>Rs.400</del>  Rs.350","image":"sav5.jpg","category":"offers"},
+{"id":25,"name":"Deal of 2 Double Fudge Brownie","price":"Rs:<del>Rs.340</del>  Rs.300","image":"brownie3.jpg","category":"offers"}
 
 ]

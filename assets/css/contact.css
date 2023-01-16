@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.butt{
+    background-color:#074842;
+    color:#fcb416;
+}
+.p_green{
+   color:#074842;
+   font-weight: bold;
+}
+.h_yel{
+    color:#fcb416;
+}
+iframe{
+    height:700px;
+}
+/* iframe{
+    height: 560px;
+    /* height: 75vh; */
+    /* filter: invert(100%); */
+/* } */ 
+
+@media(max-width:1440px){
+    iframe{
+        height: 700px;
+    }
+}
+@media(max-width:768px){
+    iframe{
+        height: 700px;
+    }
+}
+@media(max-width:375px){
+    iframe{
+        height: 300px;
+    }
+}
+#contact-container{
+    display: none;
+}

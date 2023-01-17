@@ -67,7 +67,7 @@ function makeProductColumn(_product = {}){
 <div class="card-body container-fluid">
 <h5 class="card-title">${_product.name}</h5>
 <p class="card-text" style="font-size:1.1rem;color:#074842;">${_product.price}</p>
-<button class='btn-cart' data-product='${JSON.stringify(_product)}'>add to cart</button>
+<button class='butt btn-cart' data-product='${JSON.stringify(_product)}'>add to cart</button>
 </div>
 </div>
 </div>`

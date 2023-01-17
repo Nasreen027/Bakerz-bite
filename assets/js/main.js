@@ -1,6 +1,6 @@
 const rootContainer = $("#root")
 const defaultImageUrl = ("./assets/images/")
-const offersContainer = $("#offers-container")
+// const offersContainer = $("#offers-container")
 const cakesContainer = $("#cakes-container")
 const cupCakesContainer = $("#cupcakes-container")
 const browniesContainer = $("#brownies-container")
@@ -21,7 +21,7 @@ const cartMainButton = $("#cart-main-button")
 
 
 const productCategories = {
-    OFFERS:"offers",
+    // OFFERS:"offers",
     CAKES:"cakes",
     BISCUITS:"biscuits",
     BREAD:"bread",
@@ -38,7 +38,7 @@ const productCategories = {
 
 const products = $.getJSON("./data/products.json", function(data){
 
-    const offers = data.filter((item)=> item.category === productCategories.OFFERS )
+    // const offers = data.filter((item)=> item.category === productCategories.OFFERS )
     const cakes = data.filter((item) => item.category === productCategories.CAKES)
     const biscuits = data.filter((item) => item.category === productCategories.BISCUITS)
     const bread = data.filter((item) => item.category === productCategories.BREAD)
@@ -59,7 +59,7 @@ const products = $.getJSON("./data/products.json", function(data){
 
     
 
-    offersContainer.html(makeProductGrid("Offers", offers, "#fcb416"))
+    // offersContainer.html(makeProductGrid("Offers", offers, "#fcb416"))
     cakesContainer.html(makeProductGrid("Cakes",cakes, " #A47A49"))
     biscuitsContainer.html(makeProductGrid("Biscuits",biscuits, "#C690A8"))
     breadContainer.html(makeProductGrid("Breads And Artisanal Breads",bread, "#9BAD45"))

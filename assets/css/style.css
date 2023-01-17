@@ -568,3 +568,7 @@ max-width: max-content;
   height: 10rem;
   padding-left: 5%;
 }
+.btn-cart{
+  padding: 3%;
+  border: none;
+}

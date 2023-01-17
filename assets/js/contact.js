@@ -89,7 +89,7 @@ let name_re=/[A-Za-z]{3,}$/;
       document.getElementById("bad").style="border:2px solid #1C9FFA";
       }
 
-      $(document).on("click", "#cont", function(){
+      $(document).on("click", ".cont", function(){
         $("#contact-container").fadeIn();
       })
       $(document).on("click", "#cake", function(){

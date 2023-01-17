@@ -7,10 +7,12 @@
     <title>Bakerz Bite</title>
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/sitemap.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/about.css">
   </head>
   <body>
     <!-- <input type="text" name="" id="search"> -->
@@ -64,7 +66,7 @@
               <a href="#" class="nav-link" id="faq" onclick="faq1()">FAQ</a>
             </li>
             <li class="nav-item" >
-              <a href="#" class="nav-link" id="aboutOfNav" onclick="about1()">ABOUT US</a>
+              <a href="#about-container" class="nav-link" id="aboutOfNav" onclick="about1()">ABOUT US</a>
             </li>
             <li class="nav-item" >
               <a href="#contact-container" class="nav-link" id="cont" onclick="cont1()">CONTACT US</a>
@@ -87,13 +89,11 @@
 <div>
 
 <div class="container-fluid ">
-<div class="row pl-5">
-<p class="col-md-6 col-sm-12 "  id="text">
-<span>Bakers Bite</span>
-<br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nulla?
+<div class="row">
+<p class="col-md-3 col-sm-12 "  id="text">
+<span style="width: 10%;" class="visitor_count"></span>
 </p>
-<div class="col-md-6"></div>
+<!-- <div class="col-md-6"></div> -->
 </div>
 
 </div>
@@ -167,6 +167,22 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nulla?
           </div>
           </div>
       </section>
+      <section id="about-container">
+        <div class="container mt-5" id="about">
+          <div class="row">
+              <div class="col-md-12" ><h1 id="heada">Get to know us</h1>
+              <p>Since 1996, Bakerz Bite has been one of Pakistan's most-cherished bakeshops and set the standard for tried-and-true desserts and baked goods. Learn more about our journey from neighborhood gem to sweet success. Even though we're famous worldwide, Bakerz Bite remains a neighborhood bakery at heart. We're committed to serving our local communities by supporting small businesses, charities, schools, and bake sales. All our products are prepared in a modern semi-automatic factory where we adhere to stringent guidelines of hygiene and cleanliness ensuring a safe and healthy food preparation for all our patrons. </p>
+             
+                  <video autoplay muted id="vida" loop >
+                      
+                      <source src="/assets/images/vidoe.mp4" type="video/mp4" >
+                  </video>
+            
+                
+              </div>
+          </div>
+      </div>
+      </section>
 
       <section id="site-map-container"><div class="container mt-5">
         <div id="map"><h4>Bakers Bite Site Map</h4></div>
@@ -198,6 +214,109 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nulla?
             
         </div>
       </div></section>
+      <footer id="footer">
+        <div class="container-fluid foot p-5 mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm">
+                <div class="h3">
+                  <img src="./assets/image/logo.svg" height="80px" alt="" />
+                </div>
+                <ul class="unorder_list">
+                  <li class="mt-4 d-flex">
+                    <i><img src="./assets/images/map-pin.svg" alt="" /></i>
+                    <p class="pl-1">Karachi,Pakistan</p>
+                  </li>
+                  <li class="mt-3 d-flex">
+                    <i><img src="./assets/images/mail.svg" alt="" /></i>
+                    <p class="pl-1">contact@gmail.com</p>
+                  </li>
+                  <li class="mt-3 d-flex">
+                    <i><img src="./assets/image/phone.svg" alt="" /></i>
+                    <p class="pl-1">0312 0832 542</p>
+                  </li>
+                  <li class="mt-3 d-flex p-2">
+                    <i><img src="./assets/image/facebook (1).svg" alt="" id="fb" /></i
+                    ><i class="ml-3"
+                      ><img
+                        src="./assets/image/twitter (1).svg"
+                        alt=""
+                        id="twit" /></i
+                    ><i class="ml-3"
+                      ><img src="./assets/image/instagram.svg" alt="" id="insta"
+                    /></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm mt-4">
+                <div class="h6 ml-3">Categories</div>
+                <ul class="unorder_list">
+                  <li class="mt-5 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#wooden-container" data-file="wooden.json" data-section-title="Wooden Frames" id="footerWood">
+                      Wooden frames
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#five-panel-container" data-file="five-panel.json" data-section-title="Five Panels Canvas Set" id="panelfive">
+                      5-panels canvas set
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#four-panel-container" data-file="four-panel.json" data-section-title="Four Panels Canvas Set" id="panelfour">
+                      4-panels canvas set
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#three-panel-container" data-file="three-panel.json" data-section-title="Three Panels Canvas Set" id="panelthree">
+                      3-panels canvas set
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm mt-4">
+                <div class="h6">Useful links</div>
+                <ul class="unorder_list">
+                  <li class="mt-5 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#qalam-container" data-file="qalam.json" data-section-title="Qalams We Use For Calligraphy" id="qalamsget">
+                      Qalams
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#arabic-fonts-container" id="arabicget">
+                      Arabic Fonts
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#western-fonts-container" id="westernget">
+                      Western Fonts
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm mt-4">
+                <div class="h6">Information</div>
+                <ul class="unorder_list">
+                  <li class="mt-5 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#about" id="aboutget">
+                      About Us
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link nav-go" data-container-id="#faq-container" id="faqget">
+                      FAQ
+                    </button>
+                  </li>
+                  <li class="mt-3 un_li">
+                    <button class="footer_links btn btn-link">
+                      Terms & Conditions
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <div id="cart-main-button"
         style="
@@ -238,5 +357,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nulla?
     <script src="assets/js/functions.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/visitor.js"></script>
   </body>
 </html>

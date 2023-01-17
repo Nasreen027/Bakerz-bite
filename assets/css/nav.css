@@ -80,11 +80,13 @@
 #text
 {
     position: relative;
-    top: 12rem;
-    background-color:rgba(113, 126, 126, 0.6);
+    top: 13rem;
+    left: 35%;
+    background-color:rgba(42, 44, 44, 0.6);
     font-size: 2rem;
-    color: white;
-    padding: 2%;
-    
-    
+    color:#fcb416;
+    font-size: 5rem;
+    padding: 4%;
+    height: 50%;
+    text-align: center;
 }

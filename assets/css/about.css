@@ -1,0 +1,58 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+/*---------- about page ---------*/
+#about{
+    height: auto;
+    background: linear-gradient( #5a958f,#d8af55);
+   /* background-color: #074842 ; */
+}
+#about .row{
+padding: 50px 50px;
+}
+#about .row .col-md-12{
+    box-shadow: 5px 5px 20px rgb(150, 149, 149), -3px -3px 20px rgb(150, 149, 149);
+    background: white;
+     padding: 50px 100px;
+     border-radius: 5px;
+     font-family:Arial, Helvetica, sans-serif;
+     font-size: 15px;
+}
+#heada
+{
+    color: #048376;
+
+}
+
+#vida{
+    /* height: 300px; */
+    width: 100%;
+}
+/* tablet */
+@media screen and (max-width:768px) {
+
+    #about .row .col-md-12{
+        padding:50px 70px ;
+    }
+    
+}
+/* l-mobile */
+@media screen and (max-width:425px) {
+    #about .row .col-md-12{
+        padding: 25px 40px;
+    }
+}
+
+
+/*m-mobile*/
+@media screen and (max-width:375px){
+    #about .row .col-md-12{
+        padding: 20px 35px;
+    }
+}
